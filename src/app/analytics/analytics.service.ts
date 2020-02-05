@@ -27,4 +27,8 @@ export class AnalyticsService {
     return this.http.get(url)
 
   }
+  get_offer_by_usn(term,usn):Observable<any>{
+    let ur = `${this.baseurl}get-placement/${term}/${usn}`;
+    return this.http.get(ur);
+  }
 }

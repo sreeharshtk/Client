@@ -13,4 +13,11 @@
     font-weight: bold;
   }
 
+  ::ng-deep .mat-card{
+
+    
+    border-radius: 5px !important;
+    border: #000 !important;
+   }
+   
  

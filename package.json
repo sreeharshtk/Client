@@ -32,6 +32,8 @@
     "jquery-timepicker": "^1.3.3",
     "jquery-ui-dist": "^1.12.1",
     "jquery-ui-themes": "^1.12.0",
+    "ng2-charts": "^2.3.0",
+    "ng2-google-charts": "^5.0.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
