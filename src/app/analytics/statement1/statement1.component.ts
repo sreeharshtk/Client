@@ -25,6 +25,7 @@ export class Statement1Component implements OnInit {
   showSpinner = false;
   placementOn =false;
   offers:any[] = [];
+  termbool:boolean = false;
 
   constructor(private analyticsService: AnalyticsService, private authService: AuthService) { }
 
@@ -47,11 +48,15 @@ export class Statement1Component implements OnInit {
     )
   }
 
+  
+
   searchbutton() {
     if (!this.placementOn){
       this.getPlacementrDetails()
     }
+
     this.showSpinner = true;
+    this.termbool = true;
     this.analyticsService.get_attendance_details(this.user_info['usn'], this.selectedyear, this.terms).subscribe(res => {
       this.attendance_details = res['attendance_percent']
       this.attendace_data(this.attendance_details)
