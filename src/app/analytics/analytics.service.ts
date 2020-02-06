@@ -31,4 +31,12 @@ export class AnalyticsService {
     let ur = `${this.baseurl}get-placement/${term}/${usn}`;
     return this.http.get(ur);
   }
+  get_attendence_by_course(code,usn):Observable<any>{
+    let ur = `${this.baseurl}get-attendence-for-course/${code}/${usn}`;
+    return this.http.get(ur);
+  }
+  get_faculty_names(dept):Observable<any>{
+    let ur = `${this.baseurl}get-faculty-by-dept/${dept}`;
+    return this.http.get(ur);
+  }
 }
